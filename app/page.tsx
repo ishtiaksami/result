@@ -31,7 +31,7 @@ export default function DaffodilUniversityPortal() {
     { icon: CreditCard, label: "Payment Ledger", link: "https://studentportal.diu.edu.bd/payment-ledger" },
     { icon: FileText, label: "Registration/Exam Clearance", link: "https://studentportal.diu.edu.bd/payment-ledger" },
     { icon: GraduationCap, label: "Registered Course", link: "https://studentportal.diu.edu.bd/registered-courses" },
-    { icon: Award, label: "Result", active: true, link: "https://studentportal.diu.edu.bd/result" },
+    { icon: Award, label: "Result", active: true, link: "https://studentportaldiu.vercel.app" },
     { icon: Calendar, label: "Routine", link: "https://studentportal.diu.edu.bd/routine" },
     { icon: FileText, label: "Live Result", link: "https://studentportal.diu.edu.bd/live-result" },
     { icon: Users, label: "Teaching Evaluation", link: "https://studentportal.diu.edu.bd/teaching-evaluation" },
