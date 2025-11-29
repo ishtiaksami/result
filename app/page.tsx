@@ -26,7 +26,7 @@ export default function DaffodilUniversityPortal() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
   const menuItems = [
-    { icon: BookOpen, label: "Dashboard", link: "https://studentportal.diu.edu.bd/dashboard" },
+    { icon: BookOpen, label: "Dashboard", link: "https://studentsportaldiu.vercel.app" },
     { icon: User, label: "Student Profile", link: "https://studentportal.diu.edu.bd/student-profile" },
     { icon: CreditCard, label: "Payment Ledger", link: "https://studentportal.diu.edu.bd/payment-ledger" },
     { icon: FileText, label: "Registration/Exam Clearance", link: "https://studentportal.diu.edu.bd/payment-ledger" },

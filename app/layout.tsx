@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   description: 'Daffodil International University',
   generator: 'Next.js',
   icons: {
-    icon: 'favicon.ico',        // tab icon
-    shortcut: 'favicon.ico',    // shortcut icon
+    icon: 'favicon.ico',        
+    shortcut: 'favicon.ico',    
     apple: 'favicon.ico',       // iOS icon
   },
 }
