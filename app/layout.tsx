@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   title: 'Result',
   description: 'Daffodil International University',
   generator: 'Next.js',
+  icons: {
+    icon: 'favicon.ico',        // tab icon
+    shortcut: 'favicon.ico',    // shortcut icon
+    apple: 'favicon.ico',       // iOS icon
+  },
 }
 
 export default function RootLayout({
