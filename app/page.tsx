@@ -151,6 +151,17 @@ export default function DaffodilUniversityPortal() {
                 </div>
               </div>
             )}
+
+            {selectedSemester === "summer2025" && (
+              <div className="">
+                <div className="hidden md:block">
+                  <img src="/desktop.png" alt="" />
+                </div>
+                <div className="md:hidden block">
+                  <img src="/phone.png" alt="" />
+                </div>
+              </div>
+            )}
           </div>
         </main>
 
