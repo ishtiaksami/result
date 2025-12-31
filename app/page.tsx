@@ -141,13 +141,13 @@ export default function DaffodilUniversityPortal() {
             </div>
 
             {/* Result Block */}
-            {selectedSemester === "summer2025" && (
+            {selectedSemester === "fall2025" && (
               <div className="">
                 <div className="hidden md:block">
-                  <img src="/desktop.png" alt="" />
+                  <img src="/desktop-view.jpeg" alt="" />
                 </div>
                 <div className="md:hidden block">
-                  <img src="/phone.png" alt="" />
+                  <img src="/mobile-view.jpeg" alt="" />
                 </div>
               </div>
             )}
