@@ -125,14 +125,13 @@ export default function DaffodilUniversityPortal() {
                       <SelectValue placeholder="" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="short2025">Short 2025, 254</SelectItem>
+                       <SelectItem value="fall2026">Fall 2026, 263</SelectItem>
+                      <SelectItem value="summer2026">Summer 2026, 262</SelectItem>
+                      <SelectItem value="spring2026">Spring 2026, 261</SelectItem>
                       <SelectItem value="fall2025">Fall 2025, 253</SelectItem>
                       <SelectItem value="summer2025">Summer 2025, 252</SelectItem>
                       <SelectItem value="spring2025">Spring 2025, 251</SelectItem>
-                      <SelectItem value="spring2024-242">Spring 2024, 242</SelectItem>
-                      <SelectItem value="spring2024-241">Spring 2024, 241</SelectItem>
-                      <SelectItem value="spring2023-232">Spring 2023, 232</SelectItem>
-                      <SelectItem value="spring2023-231">Spring 2023, 231</SelectItem>
+                      <SelectItem value="spring2024-242">Fall 2024, 242</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
