@@ -61,11 +61,10 @@ export default function DaffodilUniversityPortal() {
           {menuItems.map((item, index) => {
             const content = (
               <div
-                className={`flex items-center gap-3 px-4 py-3 text-sm cursor-pointer transition-colors ${
-                  item.active
+                className={`flex items-center gap-3 px-4 py-3 text-sm cursor-pointer transition-colors ${item.active
                     ? "bg-slate-700 text-white border-r-2 border-blue-400"
                     : "text-gray-300 hover:bg-slate-700 hover:text-white"
-                }`}
+                  }`}
               >
                 <item.icon className="w-4 h-4" />
                 <span>{item.label}</span>
@@ -88,9 +87,8 @@ export default function DaffodilUniversityPortal() {
 
       {/* Main Content */}
       <div
-        className={`flex-1 flex flex-col transition-all duration-300 ${
-          isSidebarOpen ? "ml-64 md:ml-64" : "ml-0"
-        }`}
+        className={`flex-1 flex flex-col transition-all duration-300 ${isSidebarOpen ? "ml-64 md:ml-64" : "ml-0"
+          }`}
       >
         {/* Header */}
         <header className="bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between flex-shrink-0">
@@ -125,7 +123,7 @@ export default function DaffodilUniversityPortal() {
                       <SelectValue placeholder="" />
                     </SelectTrigger>
                     <SelectContent>
-                       <SelectItem value="fall2026">Fall 2026, 263</SelectItem>
+                      <SelectItem value="fall2026">Fall 2026, 263</SelectItem>
                       <SelectItem value="summer2026">Summer 2026, 262</SelectItem>
                       <SelectItem value="spring2026">Spring 2026, 261</SelectItem>
                       <SelectItem value="fall2025">Fall 2025, 253</SelectItem>
@@ -140,6 +138,18 @@ export default function DaffodilUniversityPortal() {
             </div>
 
             {/* Result Block */}
+            {selectedSemester === "spring2026" && (
+              <div className="">
+                <div className="hidden md:block">
+                  <img src="/spring26.png" alt="" />
+                </div>
+                <div className="md:hidden block">
+                  <img src="/spring26-p.png" alt="" />
+                </div>
+              </div>
+            )}
+
+
             {selectedSemester === "fall2025" && (
               <div className="">
                 <div className="hidden md:block">
