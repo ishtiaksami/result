@@ -5,12 +5,12 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Dashboard',
+  title: 'Result',
   description: 'Daffodil International University',
   generator: 'Next.js',
   icons: {
-    icon: 'favicon.ico',        // tab icon
-    shortcut: 'favicon.ico',    // shortcut icon
+    icon: 'favicon.ico',        
+    shortcut: 'favicon.ico',    
     apple: 'favicon.ico',       // iOS icon
   },
 }

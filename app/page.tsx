@@ -25,7 +25,7 @@ export default function DaffodilUniversityPortal() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
   const menuItems = [
-    { icon: BookOpen, label: "Dashboard", link: "https://studentportal.diu.edu.bd/dashboard" },
+    { icon: BookOpen, label: "Dashboard", link: "https://studentsportaldiu.vercel.app" },
     { icon: User, label: "Student Profile", link: "https://studentportal.diu.edu.bd/student-profile" },
     { icon: CreditCard, label: "Payment Ledger", link: "https://studentportal.diu.edu.bd/payment-ledger" },
     { icon: FileText, label: "Registration/Exam Clearance", link: "https://studentportal.diu.edu.bd/payment-ledger" },
@@ -60,11 +60,10 @@ export default function DaffodilUniversityPortal() {
           {menuItems.map((item, index) => {
             const content = (
               <div
-                className={`flex items-center gap-3 px-4 py-3 text-sm cursor-pointer transition-colors ${
-                  item.active
+                className={`flex items-center gap-3 px-4 py-3 text-sm cursor-pointer transition-colors ${item.active
                     ? "bg-slate-700 text-white border-r-2 border-blue-400"
                     : "text-gray-300 hover:bg-slate-700 hover:text-white"
-                }`}
+                  }`}
               >
                 <item.icon className="w-4 h-4" />
                 <span>{item.label}</span>
@@ -87,9 +86,8 @@ export default function DaffodilUniversityPortal() {
 
       {/* Main Content */}
       <div
-        className={`flex-1 flex flex-col transition-all duration-300 ${
-          isSidebarOpen ? "ml-64 md:ml-64" : "ml-0"
-        }`}
+        className={`flex-1 flex flex-col transition-all duration-300 ${isSidebarOpen ? "ml-64 md:ml-64" : "ml-0"
+          }`}
       >
         {/* Header */}
         <header className="bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between flex-shrink-0">
@@ -113,18 +111,65 @@ export default function DaffodilUniversityPortal() {
         {/* Page Content */}
         <main className="flex-1 overflow-auto">
           <div className="space-y-6">
-           
+            {/* Search Block */}
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+              <h1 className="text-2xl font-semibold text-gray-900 mb-6">Academic Result</h1>
+              <label className="block text-sm font-medium text-gray-700 mb-2">Search Semester</label>
+              <div className="flex gap-4 items-end">
+                <div className="flex-1 max-w-md">
+                  <Select value={selectedSemester} onValueChange={setSelectedSemester}>
+                    <SelectTrigger className="w-full">
+                      <SelectValue placeholder="" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="fall2026">Fall 2026, 263</SelectItem>
+                      <SelectItem value="summer2026">Summer 2026, 262</SelectItem>
+                      <SelectItem value="spring2026">Spring 2026, 261</SelectItem>
+                      <SelectItem value="fall2025">Fall 2025, 253</SelectItem>
+                      <SelectItem value="summer2025">Summer 2025, 252</SelectItem>
+                      <SelectItem value="spring2025">Spring 2025, 251</SelectItem>
+                      <SelectItem value="spring2024-242">Fall 2024, 242</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+                <Button className="bg-[#373063] hover:bg-blue-900 text-white py-5 px-6">Search</Button>
+              </div>
+            </div>
+
             {/* Result Block */}
-            
+            {selectedSemester === "spring2026" && (
               <div className="">
                 <div className="hidden md:block">
-                  <img src="/desktop-a.png" alt="" />
+                  <img src="/spring26.png" alt="" />
                 </div>
                 <div className="md:hidden block">
-                  <img src="/phone-a.png" alt="" />
+                  <img src="/spring26-p.png" alt="" />
                 </div>
               </div>
-            
+            )}
+
+
+            {selectedSemester === "fall2025" && (
+              <div className="">
+                <div className="hidden md:block">
+                  <img src="/desktop-view.jpeg" alt="" />
+                </div>
+                <div className="md:hidden block">
+                  <img src="/mobile-view.jpeg" alt="" />
+                </div>
+              </div>
+            )}
+
+            {selectedSemester === "summer2025" && (
+              <div className="">
+                <div className="hidden md:block">
+                  <img src="/desktop.png" alt="" />
+                </div>
+                <div className="md:hidden block">
+                  <img src="/phone.png" alt="" />
+                </div>
+              </div>
+            )}
           </div>
         </main>
 
